@@ -1,0 +1,9 @@
+<section class="grilla-peliculas">
+    <article class="pelicula" id={{item.id}} *ngFor="let item of peliculas" (click)="obtenerPelicula(item.id)">
+        <h2>{{item.nombre}}</h2>
+        <img class="imagen" src="../../../assets/fotos/peliculas/{{item.fotoPelicula}}" alt="">
+    </article>
+    
+</section>
+
+<!--id={{item.id}} *ngFor="let item of peliculas"-->

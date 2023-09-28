@@ -1,0 +1,24 @@
+.grilla-peliculas
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.grilla-peliculas .pelicula
+{
+    height: 450px;
+    text-align: center;
+    box-sizing: border-box;
+
+    border-radius: 5%;
+    background-color: rgb(98, 0, 255);
+    cursor: pointer;
+}
+
+.pelicula .imagen
+{
+    width: 300px;
+    height: calc(98.2% - 38.39px);
+    border-radius: 0 0 5% 5%;
+}

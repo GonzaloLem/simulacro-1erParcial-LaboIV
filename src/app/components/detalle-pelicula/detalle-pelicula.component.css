@@ -1,0 +1,25 @@
+.detalle
+{
+    display: flex;
+    justify-content: center;
+
+    height: 300px;
+}
+
+.detalle .pelicula
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.detalle .imagen
+{
+    width: 200px;
+    height: 300px;
+
+    position: absolute;
+    left: -210px;
+}

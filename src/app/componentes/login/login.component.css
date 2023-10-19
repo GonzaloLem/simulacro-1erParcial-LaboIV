@@ -1,0 +1,15 @@
+.login 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .formulario
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}

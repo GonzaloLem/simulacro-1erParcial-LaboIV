@@ -1,0 +1,54 @@
+<app-header></app-header>
+<main class="pelicula-alta">
+    <section class="campos">
+        <form [formGroup]="formulario" class="form">
+            <div class="datos">
+                <div class="info">
+                    <div class="">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" formControlName="nombre" id="nombre" >
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="">
+                        <label for="validationCustom02" class="form-label">Tipo</label>
+                        <input type="text" class="form-control" formControlName="tipo" id="tipo" >
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                </div>
+                <div class="info">
+                    <div class="">
+                        <label for="validationCustomUsername" class="form-label">Fecha de Estreno</label>
+                        <div class="input-group has-validation">
+                          <input type="text" class="form-control" formControlName="fechaEstreno" id="fechaEstreno" aria-describedby="inputGroupPrepend" >
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="">
+                        <label for="validationCustom03" class="form-label">Cantidad de Publico</label>
+                        <input type="text" class="form-control" formControlName="cantidadPublico" id="cantidadPublico" >
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div>
+                <div class="archivo">
+                    <input type="file" (change)="seleccionArchivo($event)" class="input-archivo form-control" id="foto">
+                  </div>
+                <div class="">
+                  <button class="btn btn-primary" type="submit" (click)="darAlta()">Dar de Alta</button>
+                </div>
+            </div>
+
+          </form>
+          <app-tabla-actor (outPutActores)="obtenerPaisSeleccionado($event)"></app-tabla-actor>
+    </section>
+
+</main>

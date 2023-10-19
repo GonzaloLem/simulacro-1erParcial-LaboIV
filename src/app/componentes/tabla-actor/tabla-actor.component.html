@@ -1,0 +1,8 @@
+<section class="actores">
+    <ul class="lista list-group">
+        <!--<li class="list-group-item active" aria-current="true">An active item</li>-->
+        <li *ngFor="let actor of listadoActores; let i = index" (click)="activarItem(i)" [ngClass]="{'active': actor.seleccionado}" class="item list-group-item" id="{{i}}">
+            <span>{{actor.nombre}}</span>
+        </li>
+      </ul>
+</section>

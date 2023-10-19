@@ -1,0 +1,28 @@
+<section class="login">
+    <form [formGroup]="formulario" class="formulario">
+        <h1 class="h3 mb-3 fw-normal">Logueate!</h1>
+    
+        <div class="form-floating">
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="name@example.com">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+        <div style="color: #FF0000;" *ngIf="(formulario.controls['email'].errors?.['email'] && formulario.controls['email'].touched)">
+          Email invalido.
+        </div>
+        <div style="color: #FF0000;" *ngIf="(formulario.controls['password'].errors?.['pattern'] && formulario.controls['password'].touched)">
+          Solo se permiten letras y numeros.
+        </div>
+        <div style="color: #FF0000;" *ngIf="logueado">
+          Usuario Invalido
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit" (click)="login()">Login</button>
+        <button class="btn btn-primary w-100 py-2" type="submit" routerLink="/register">Register</button>
+        <button class="btn btn-primary w-100 py-2" type="submit" (click)="autoLogin()">Auto Login</button>
+    </form>
+</section>
+
+

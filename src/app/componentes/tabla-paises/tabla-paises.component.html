@@ -1,0 +1,9 @@
+<section class="paises">
+    <ul class="lista list-group">
+        <!--<li class="list-group-item active" aria-current="true">An active item</li>-->
+        <li *ngFor="let pais of listadoPaises; let i = index" (click)="activarItem(pais.name.common, i)" [ngClass]="{'active': i === paisSeleccionado.itemSeleccionado}" class="item list-group-item" id="{{i}}">
+            <img class="img" src="{{pais.flags.svg}}" alt="imagen del pais {{pais.name.common}}">
+            <span>{{pais.name.common}}</span>
+        </li>
+      </ul>
+</section>

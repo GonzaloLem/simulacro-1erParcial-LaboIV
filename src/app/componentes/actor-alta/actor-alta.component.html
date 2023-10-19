@@ -1,0 +1,45 @@
+<app-header></app-header>
+<main class="actor-alta">
+    <section class="campos">
+        <form [formGroup]="formulario" class="form-actor">
+            <div class="datos">
+                <span>Nombre</span>
+                <input type="text" id="nombre" formControlName="nombre">
+                <span>Apellido</span>
+                <input type="text" id="apellido" formControlName="apellido">
+                <div style="color: #FF0000;" *ngIf="(formulario.controls['nombre'].errors?.['soloLetras'] && formulario.controls['nombre'].touched) || (formulario.controls['apellido'].errors?.['soloLetras'] && formulario.controls['apellido'].touched) ">
+                    Solo se permiten letras.
+                </div>
+            </div>
+            <div class="datos">
+                <span>Usuario</span>
+                <input type="text" id="usuario" formControlName="usuario">
+                <span>Email</span>
+                <input type="text" id="email" formControlName="email">
+                <div style="color: #FF0000;" *ngIf="formulario.get('email')?.hasError('email')">
+                    email invalido
+                </div>
+                <div style="color: #FF0000;" *ngIf="formulario.get('usuario')?.hasError('soloLetras')">
+                    Usuario invalido.
+                </div>
+            </div>
+            <div class="datos">   
+                <span>Numero de Telefono</span>
+                <input type="text" id="numero" formControlName="numero">
+                <span>Direccion</span>
+                <input type="text" id="direccion1" formControlName="direccion1">
+                <span>Direccion 2</span>
+                <input type="text" id="direccion2" formControlName="direccion2">
+                <div style="color: #FF0000;" *ngIf="formulario.get('direccion1')?.hasError('pattern') || formulario.get('direccion2')?.hasError('pattern')">
+                    Direccion invalida
+                </div>
+
+                <div style="color: #FF0000;" *ngIf="formulario.get('numero')?.hasError('soloNumeros')">
+                    numero invalido
+                </div>
+            </div>
+        </form>
+        <app-tabla-paises (outPutPais)="obtenerPaisSeleccionado($event)"></app-tabla-paises>
+    </section>
+    <button (click)="darAlta()" class="boton btn btn-primary">Dar de alta</button>
+</main>

@@ -1,0 +1,12 @@
+<section class="detalle-pelicula">
+    <article class="pelicula">
+        <img class="img" src="{{pelicula.urlFoto}}" alt="imagen de la pelicula {{pelicula.nombre}}">
+        <div class="informacion">
+            <h2 class="titulo">{{pelicula.nombre}}</h2>
+            <span class="detalle">Tipo: {{pelicula.tipo}}</span>
+            <span class="detalle">fecha de Estreno: {{pelicula.fechaEstreno}}</span>
+            <span class="detalle">Cantidad de Publico: {{pelicula.cantidadPublico}}</span>
+        </div>
+    </article>
+</section>
+<div class="modal" [style.display]="'block'" (click)="eliminarModal()"></div>

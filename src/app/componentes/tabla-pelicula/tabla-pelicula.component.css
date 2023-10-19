@@ -1,0 +1,9 @@
+.pelicula
+{
+    cursor: pointer;
+}
+
+.pelicula .img
+{
+    height: 420px;
+}

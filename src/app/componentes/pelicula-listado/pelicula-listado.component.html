@@ -1,0 +1,8 @@
+<section class="listado-peliculas">
+    <h2>Listado de Peliculas</h2>
+    <div class="peliculas">
+      <app-tabla-pelicula (outPutdetalle)="obtenerPelicula($event)" *ngFor="let pelicula of listadoPeliculas" [pelicula]="pelicula"></app-tabla-pelicula>
+    </div>
+
+</section>
+

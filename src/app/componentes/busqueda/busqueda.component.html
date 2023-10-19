@@ -1,0 +1,3 @@
+<app-header></app-header>
+<app-pelicula-listado (outPutPelicula)="obtenerPelicula($event)" *ngIf="ocultarListadoPeliculas"></app-pelicula-listado>
+<app-detalle-pelicula (outPutCerrarDetalle)="ocultarComponenteDetallePelicula()" [pelicula]="pelicula" *ngIf="ocultarDetallePelicula"></app-detalle-pelicula>

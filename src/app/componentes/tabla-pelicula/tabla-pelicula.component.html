@@ -1,0 +1,8 @@
+<div  class="pelicula card" style="width: 18rem;">
+    <img src="{{pelicula.urlFoto}}" class="img card-img-top" alt="imagen de la pelicula {{pelicula.nombre}}">
+    <div class="card-body">
+      <h5 class="card-title">{{pelicula.nombre}}</h5>
+      <!-- descripcion <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+      <button (click)="obtenerDetallePelicula()" class="btn btn-primary">Ver Detalle</button>
+    </div>
+  </div>

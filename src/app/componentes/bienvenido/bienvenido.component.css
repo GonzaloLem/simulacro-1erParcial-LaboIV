@@ -1,0 +1,14 @@
+.bienvenido
+{
+    height: calc(100vh - 56px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+
+    background-image: url("../../../assets/fondo.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}

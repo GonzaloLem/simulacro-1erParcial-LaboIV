@@ -1,0 +1,38 @@
+.pelicula-alta
+{
+    height: calc(100vh - 56px);
+}
+
+.pelicula-alta .campos
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pelicula-alta .form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pelicula-alta .datos
+{
+    display: flex;
+    gap: 20px;
+}
+
+.pelicula-alta .info 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.pelicula-alta .archivo
+{
+    width: 160px;
+    margin: 10px 0;
+}

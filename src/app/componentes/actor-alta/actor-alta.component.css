@@ -1,0 +1,36 @@
+.actor-alta
+{
+    height: calc(100vh - 56px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.actor-alta .boton
+{
+    align-self:flex-start;
+    margin: 0 22%;
+}
+
+.actor-alta .campos
+{
+    display: flex;
+    gap: 50px;
+}
+
+.actor-alta .form-actor
+{
+    display: flex;
+    gap: 20px;
+}
+
+.form-actor .datos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

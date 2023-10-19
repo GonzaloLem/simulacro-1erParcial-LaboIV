@@ -1,0 +1,15 @@
+.actores
+{
+
+    width: 200%;
+    max-height: 210px;
+    overflow-y: auto;
+    user-select: none;
+}
+
+.lista .item 
+{
+    cursor: pointer;
+}
+
+

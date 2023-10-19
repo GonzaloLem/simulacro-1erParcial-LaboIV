@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "simulacro-primerparcial-8f886": {
+      "hosting": {
+        "simulacro-primer-parcial": [
+          "simulacro-primerparcial-8f886"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "simulacro-primerparcial-8f886"
+  }
+}

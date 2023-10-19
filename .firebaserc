@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "targets": {
     "simulacro-primerparcial-8f886": {
       "hosting": {
@@ -8,6 +9,8 @@
       }
     }
   },
+=======
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
   "projects": {
     "default": "simulacro-primerparcial-8f886"
   }

@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "simulacro-primer-parcial": {
+=======
+    "simulacro-primerParcial": {
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +64,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "simulacro-primer-parcial:build:production"
             },
             "development": {
               "browserTarget": "simulacro-primer-parcial:build:development"
+=======
+              "browserTarget": "simulacro-primerParcial:build:production"
+            },
+            "development": {
+              "browserTarget": "simulacro-primerParcial:build:development"
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +82,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "simulacro-primer-parcial:build"
+=======
+            "browserTarget": "simulacro-primerParcial:build"
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
           }
         },
         "test": {
@@ -91,6 +106,7 @@
             ],
             "scripts": []
           }
+<<<<<<< HEAD
         },
         "deploy": {
           "builder": "@angular/fire:deploy",
@@ -98,11 +114,19 @@
             "version": 2,
             "browserTarget": "simulacro-primer-parcial:build:production"
           }
+=======
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
         }
       }
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": false
   }
 }
+=======
+    "analytics": "8a20cb40-bfad-410f-b26a-2c7e471813e8"
+  }
+}
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d

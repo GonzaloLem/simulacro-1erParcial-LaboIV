@@ -4,18 +4,22 @@ MIT
 @angular/core
 MIT
 
+<<<<<<< HEAD
 @angular/fire
 MIT
 
 @angular/forms
 MIT
 
+=======
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
 @angular/platform-browser
 MIT
 
 @angular/router
 MIT
 
+<<<<<<< HEAD
 @firebase/analytics
 Apache-2.0
 
@@ -83,6 +87,8 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 rxfire/firestore
 
+=======
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
 rxjs
 Apache-2.0
                                Apache License

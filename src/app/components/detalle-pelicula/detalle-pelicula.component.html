@@ -1,0 +1,9 @@
+<section class="detalle" *ngIf="pelicula !== null && pelicula !== ''">
+    <article class="pelicula">
+        <h2>{{pelicula.nombre}}</h2>
+        <span class="txt">Tipo: {{pelicula.tipo}}</span>
+        <span class="txt">Fecha Estreno: {{pelicula.fechaEstreno}}</span>
+        <span class="txt">Cantidad de Público: {{pelicula.cantidadPublico}}</span>
+        <img class="imagen" src="../../../assets/fotos/peliculas/{{pelicula.fotoPelicula}}" alt="">
+    </article>
+</section>

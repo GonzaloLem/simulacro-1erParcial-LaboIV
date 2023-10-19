@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,14 +23,32 @@ import { TablaActorComponent } from './componentes/tabla-actor/tabla-actor.compo
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegisterComponent } from './componentes/register/register.component';
+=======
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TablaPeliculaComponent } from './components/tabla-pelicula/tabla-pelicula.component';
+import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
+import { PeliculaAltaComponent } from './components/pelicula-alta/pelicula-alta.component';
+import { ActorAltaComponent } from './components/actor-alta/actor-alta.component';
+import { ActorListadoComponent } from './components/actor-listado/actor-listado.component';
+import { PeliculaListadoComponent } from './components/pelicula-listado/pelicula-listado.component';
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
+=======
+    TablaPeliculaComponent,
+    DetallePeliculaComponent,
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
     BusquedaComponent,
     PeliculaAltaComponent,
     ActorAltaComponent,
     ActorListadoComponent,
+<<<<<<< HEAD
     PeliculaListadoComponent,
     TablaPeliculaComponent,
     DetallePeliculaComponent,
@@ -49,6 +68,13 @@ import { RegisterComponent } from './componentes/register/register.component';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
+=======
+    PeliculaListadoComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+>>>>>>> 08581867c4d5f5f46f50328c704fa1d7c745df4d
   ],
   providers: [],
   bootstrap: [AppComponent]
